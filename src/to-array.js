@@ -4,4 +4,4 @@ export const toArray = async xs => {
     ys.push(x);
   }
   return ys;
-}
+};
