@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", {
+        "shippedProposals": true,
+        "useBuiltIns": "usage"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-pipeline-operator",
+    "@babel/plugin-proposal-async-generator-functions"
+  ]
+}
