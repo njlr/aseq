@@ -1,14 +1,5 @@
 {
-  "presets": [
-    [
-      "@babel/preset-env", {
-        "target": {
-          "node": 9
-        },
-        "modules": false, 
-      }
-    ]
-  ],
+  "presets": [],
   "plugins": [
     "@babel/plugin-proposal-pipeline-operator",
     "@babel/plugin-syntax-async-generators"
