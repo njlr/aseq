@@ -2,6 +2,7 @@
   "presets": [
     [
       "@babel/preset-env", {
+        "modules": false, 
         "shippedProposals": true,
         "useBuiltIns": "usage"
       }
@@ -9,6 +10,22 @@
   ],
   "plugins": [
     "@babel/plugin-proposal-pipeline-operator",
-    "@babel/plugin-proposal-async-generator-functions"
-  ]
+    "@babel/plugin-syntax-async-generators"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env", {
+            "shippedProposals": true,
+            "useBuiltIns": "usage"
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-proposal-pipeline-operator",
+        "@babel/plugin-proposal-async-generator-functions"
+      ]
+    }
+  }
 }
