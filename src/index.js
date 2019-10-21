@@ -1,3 +1,4 @@
+export { distinct } from './distinct.js';
 export { filter } from './filter.js';
 export { flatMap } from './flat-map.js';
 export { fromGenerator } from './from-generator.js';
