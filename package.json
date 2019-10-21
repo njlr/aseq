@@ -1,5 +1,5 @@
 {
-  "name": "aseq",
+  "name": "@njlr/aseq",
   "version": "1.0.0",
   "entry": "./src/index.js",
   "main": "./lib/index.js",
