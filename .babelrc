@@ -1,7 +1,19 @@
 {
-  "presets": [],
+  "presets": [
+    [
+      "@babel/preset-env", {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
   "plugins": [
-    "@babel/plugin-proposal-pipeline-operator",
+    [
+      "@babel/plugin-proposal-pipeline-operator", {
+        "proposal": "minimal"
+      }
+    ],
     "@babel/plugin-syntax-async-generators"
   ],
   "env": {
@@ -9,13 +21,17 @@
       "presets": [
         [
           "@babel/preset-env", {
-            "shippedProposals": true,
-            "useBuiltIns": "usage"
+            "shippedProposals": true
           }
         ]
       ],
       "plugins": [
-        "@babel/plugin-proposal-pipeline-operator",
+        "@babel/plugin-transform-runtime",
+        [
+          "@babel/plugin-proposal-pipeline-operator", {
+            "proposal": "minimal"
+          }
+        ],
         "@babel/plugin-proposal-async-generator-functions"
       ]
     }
